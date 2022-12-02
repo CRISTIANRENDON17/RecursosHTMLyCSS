@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje</title>
+    <style type="text/css">
+        #estado {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        function llenarCaja() {
+            var caja = document.getElementById("caja");
+            caja.innerHTML = "A ocurrido un error, para mayor información";
+        }
+
+        function alertar(mensaje) {
+            var estado = document.getElementById("estado");
+            estado.style.display = "block";
+            estado.innerHTML = mensaje + "<br />" + estado.innerHTML;
+        }
+    </script>
+</head>
+
+<body>
+    <a href="javascript:llenarCaja()">Llenar Caja</a>
+    <p></p>
+    <div id="caja"></div>
+    <p></p>
+    <div id="estado"></div>
+    <input type="button" onclick="alertar('Ha ocurrido un problema')" value="Generar Problema" />
+    <p></p>
+    <a href='javascript:alertar("Este mensaje fue generado desde un link")'>Generar Mensaje</a>
+</body>
+
+</html>

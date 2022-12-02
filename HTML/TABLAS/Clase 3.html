@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 3</title>
+    <link rel="stylesheet" href="/CSS/Clase 3 botones.css"> <!-- Hola de estilo css-->
+    <link rel="shortcut icon" type="image/x-icon" href="/HTML/img/Icono poli.jpg" />
+    <!-- icono en la pestaña-->
+</head>
+
+<body>
+    <center>
+        <table>
+            <center>
+                <h1>Opening 2 de Naruto</h1>
+            </center>
+            <tr>
+                <!-- columna-->
+                <center>
+                    <td>
+                        <!-- fila-->
+                        <video src="/HTML/Video/Opening 2 de naruto.mp4" controls width="600"></video>
+                        <!-- Etiqueta del video-->
+                    </td>
+                    <td>
+                        <!-- fila-->
+                        <h3>Opening 1 de Boku no hero </h3>
+                        <audio src="/HTML/Musica/my-hero-academia-official-opening.mp3" controls></audio>
+                        <!-- etiqueta para audio-->
+                    </td>
+                </center>
+            </tr>
+            <tr>
+                <td align=left>
+                    <h3>
+                        ¿Te gusto el video?
+                    </h3>
+                </td>
+                <td>
+                    <form action="" method="">
+                        <!-- Formulario-->
+                        <input type="radio" name="like" value="yes">Si
+                        <!--opcion si -->
+                        <input type="radio" name="like" value="no">No
+                        <!--obcion no-->
+                        <!--si el name se llama igual, entonces te deja seleccionar una opcion-->
+                        <input type="submit" value="Send"> <!-- BOTON-->
+                    </form>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+
+    <br>
+    <br>
+    <br>
+    -----------------------------------------------------------------------------------------------
+    <!-- segunda parte de la clase-->
+    <ol>
+        <form action="" method="">
+            <label for="name">Your name</label>
+            <!--for, relation between the label and the input-->
+            <input type="text" placeholder="Write your name" maxlength="10" required name="name" id="name" />
+            <br />
+            <label>Your lastname</label>
+            <input type="text" placeholder="Páez" readonly name="lastname" />
+            <br />
+            <label>Your age</label>
+            <input type="text" placeholder="Write your age" disabled name="age" />
+            <br />
+            <label for="email">Your email</label>
+            <input type="email" placeholder="Write your email" required name="email" id="email" />
+            <br />
+            <label for="description">Your description</label>
+            <textarea name="description" placeholder="write your description" id="description"></textarea>
+            <br />
+            <label for="study">Study</label>
+            <select name="study" id="study">
+                <option>Seleccione la opción</option>
+                <option value="University">University</option>
+                <option value="postgraduate">Postgraduate</option>
+            </select>
+            <br />
+            <label>Your gender</label>
+            <input type="radio" name="gender" value="man" id="man" />
+            <label for="man">Man</label>
+            <!--label, to select it by touching the text-->
+            <input type="radio" name="gender" value="woman" id="woman" /><label for="woman">Woman</label>
+            <br />
+            <label>What language do you know?</label>
+            <input type="checkbox" name="language" value="HTML5" id="HTML5" /><label for="HTML5">HTML5</label>
+            <input type="checkbox" name="language" value="CSS" id="CSS" /><label for="CSS">CSS</label>
+            <input type="checkbox" name="language" value="JavaScript" id="JavaScript" /><label
+                for="JavaScript">JavaScript</label>
+            <br />
+            <input type="submit" value="Send" />
+        </form>
+
+    </ol>
+
+    <!-- tercera parte de la clase-->
+
+    <body>
+        <div>
+            <a href="#" class="btn">Standard Button</a>
+        </div>
+        <div>
+            <a href="#" class="btn small">Small</a>
+            <!--esta usando la clase btn y small -->
+            <a href="#" class="btn medium blue">Medium</a> <!-- esta usando la clase btn la medium y blue-->
+            <a href="#" class="btn big green">Big</a><!-- esta usando la clase btn la medium y green-->
+            <a href="#" class="btn extra-big orange">Bigger</a> <!-- esta usando la clase btn, extra-bid y orange-->
+        </div>
+        <div>
+            <a href="#" class="btn small border-radius">Small</a>
+            <a href="#" class="btn medium blue border-radius">Medium</a>
+            <a href="#" class="btn big green border-radius">Big</a>
+            <a href="#" class="btn extra-big orange border-radius">Bigger</a>
+        </div>
+
+
+
+
+
+
+    </body>
+
+</html>

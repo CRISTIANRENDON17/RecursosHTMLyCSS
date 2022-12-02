@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background: #21295c;
+    transition: all 1s ease; /*smooth changes
+    /*transition: all 2s linear; /*all time is the same speed
+    transition-delay: 2s; /*time in seg
+    transition: all 2s ease-in;
+    transition: all 2s ease-out;
+    transition: all 2s ease-in-out;*/
+}
+
+.box:hover {
+    background: #9eb3c2;
+    width: 400px;
+    /*transform: rotate(180deg);*/
+}

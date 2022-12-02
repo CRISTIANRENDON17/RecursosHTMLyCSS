@@ -1,0 +1,51 @@
+.background_2 {
+    width: 900px;
+    /*anchura*/
+    height: 900px;
+    /*altura*/
+    background: url('/HTML/img/green-fibers.png') darkslategrey;
+    ;
+    /*imagen, pero si pasa algo, sale un color*/
+    background-repeat: repeat;
+    /*La propiedad de CSS background-repeat define como se repiten los fondos del documento.*/
+    background-size: 50%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*display: flex;*/
+}
+
+.izq {
+    float: left;
+    width: 50%;
+
+}
+
+.der {
+    float: right;
+    width: 50%;
+    background-color: azure;
+    padding: 15px 20px; /*margen del contenido*/
+    border-radius: 10px /*margen del recuadro*/
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background: #000;
+    }
+
+    .main {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,4 @@
+cd "C:\Users\CRISTIAN\Desktop\Universidad\Talleres 2\React\intro-react"
+
+
+npm start

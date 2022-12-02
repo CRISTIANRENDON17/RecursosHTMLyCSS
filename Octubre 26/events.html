@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            background: #226fc1;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="greeting()">Greeting</button>
+    <!--in HTML-->
+    <p><button id="btnGreeting">Greeting</button></p>
+    <!--in JS-->
+
+    <button id="btnBox">Create box</button>
+    <section id="container"></section>
+
+    <script>
+        function greeting() {
+            alert('Hello');
+        }
+
+        function greeting2() {
+            alert('Hello 2');
+        }
+
+        function greeting3() {
+            alert('Hello 3');
+        }
+
+        document.getElementById("btnGreeting").addEventListener('click', greeting);
+        document.getElementById("btnGreeting").addEventListener('click', greeting2);
+        document.getElementById("btnGreeting").addEventListener('mouseenter', greeting3);
+        document.getElementById("btnGreeting").removeEventListener('mouseenter', greeting3);
+        //anonymous function 
+        document.getElementById("btnGreeting").addEventListener('click', function() {
+            alert('Hello 4');
+        });
+
+        function createBox() {
+            var container = document.getElementById("container");
+            var box = document.createElement("div");
+            box.className = 'box';
+            container.appendChild(box);
+        }
+
+        document.getElementById('btnBox').addEventListener('click', createBox);
+    </script>
+</body>
+
+</html>

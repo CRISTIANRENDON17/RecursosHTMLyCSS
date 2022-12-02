@@ -1,0 +1,56 @@
+/*
+body, selector or label
+color, property
+blue, value
+
+{} Universal selector, choose all the elements of the page 
+*/
+
+body {
+    color: blue;
+}
+
+p {
+    color: orange;
+}
+
+
+/*for all the elements*/
+
+* {
+    color: red;
+}
+
+h1,
+h2,
+h3 {
+    color: green;
+}
+
+h2 {
+    color: pink;
+}
+
+div p {
+    font-size: 30px;
+    color: blueviolet;
+}
+
+div article p {
+    font-size: 10px;
+    color: brown;
+}
+
+p a {
+    color: black;
+}
+
+.big {
+    /*for class*/
+    font-size: 28px;
+}
+
+#big {
+    /*for id*/
+    font-size: 10px;
+}

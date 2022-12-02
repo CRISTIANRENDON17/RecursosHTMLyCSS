@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/HTML/img/Icono poli.jpg" /> <!-- icono en la pestaña-->
+    <link rel="stylesheet" href="/CSS/Clase 4.css"> <!-- Hola de estilo css-->
+</head>
+
+<body>
+
+    <div class="background">
+        <br>
+        <ol>
+
+            <img src="/HTML/img/user.jpg" width="200px"> <!-- imagen de usuario-->
+
+            <h2>Crear un usuario</h2>
+            <form action="" method="" class="tabla1">
+                Tu nombre :<input type="text" placeholder="Escribe tu nombre" maxlength="10" required name="name"
+                    id="name" />
+                <br>
+                Tu email :<input type="email" placeholder="Escribe tu email" maxlength="50" required name="email"
+                    id="email" />
+                <br>
+                <label for="genero">Escoga su genero</label>
+                <select name="genero" id="genero">
+                    <option>Seleccione un genero</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br>
+                Documento :<input type="text" placeholder="Escribe tu Documento" maxlength="11" required
+                    name="Documento" id="Documento" />
+                <br>
+                Fecha :<input type="date" required name="Fecha" id="Fecha" />
+                <br>
+                Telefono :<input type="text" placeholder="Escribe tu Telefono" maxlength="11" name="Telefono"
+                    id="Telefono" />
+                <br>
+                Fijo :<input type="text" placeholder="Escribe tu Fijo" maxlength="11" name="Fijo" id="Fijo" />
+                <br>
+                <input type="submit" value="Send" />
+            </form>
+            <br>
+           
+            <center>
+                <table border="1">
+                    <tr>
+                        <th>
+                            <div class="audio">
+                                <br> <!-- salto de linea-->
+                                <audio src="/HTML/Musica/my-hero-academia-official-opening.mp3" controls></audio>
+                                <!-- etiqueta para audio-->
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="video">
+                                <video src="/HTML/Video/Opening 2 de naruto.mp4" controls width="300"></video>
+                                <!-- Etiqueta del video-->
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </center>
+
+        </ol>
+    </div>
+
+</body>
+
+</html>

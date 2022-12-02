@@ -1,0 +1,13 @@
+body {
+    background: url("../images/email-pattern.png");
+    background-attachment: scroll;
+}
+
+.background {
+    width: 600px;
+    height: 600px;
+    background: url("../images/html5.jpg") aqua;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    /*display: flex;*/
+}

@@ -1,0 +1,22 @@
+div > p { /*only the paragraphs direct of the div*/
+    font-size: 20px;
+}
+
+input[type] { /*only the inputs that have a type*/
+
+}
+
+input[type="text"] { /*only the inputs that have a text type*/
+    color: red;
+    font-size: 30px;
+}
+
+body { /*extends*/
+    font-size: 20px;
+    color: blue;
+}
+
+article {
+    font-size: 16px;
+    color: black;
+}

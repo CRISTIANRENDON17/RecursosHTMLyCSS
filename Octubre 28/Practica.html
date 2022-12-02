@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Octubre 28/Practica.css">
+    <link rel="stylesheet" href="/CSS/Boostrap/bootstrap.css">
+    <title>Tablas</title>
+    <script>
+        var filas = prompt("Ingrese la cantidad de filas para la tabla");
+        var Nombre = prompt("Nombre completo de la Profesora:");
+        var Grupo = prompt("Numero del grupo");
+    </script>
+</head>
+
+<body class="background_2">
+    <script>
+    document.write("<h2>"+"Profesora:"+Nombre+"-"+"<span class='badge badge-secondary'>"+"Grupo: "+Grupo+"</span></h2>")
+    </script>
+    <table width="400" border="1">
+        <tr>
+            <script>
+                for (var i = 0; i <= 5; i++) {
+                    if (i == 0) {
+                        document.write("<th>Tabla</th>");
+                    } else {
+                        document.write("<th>Nota " + i + "</th> ");
+                    }
+                }
+            </script>
+        </tr>
+        <script>
+            for (var i = 0; i < filas; i++) {
+                document.write("<tr>");
+                for (var j = 0; j <= 5; j++) {
+                    if (j == 0) {
+                        document.write("<td class='alert alert-success'>Alumno, " + parseInt(i + 1) + "</td>");
+                    } else {
+                        document.write("<td><input type=\"text\" size='10' class='alert alert-success'></td>");
+                    }
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+    <p></p><a href="javascript:window.close()" class="btn btn-success">Cerrar</a></p>
+</body>
+
+</html>
+

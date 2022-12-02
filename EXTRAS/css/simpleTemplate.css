@@ -1,0 +1,55 @@
+* {
+    /*el signo "*" se utiliza para colocar propiedades que se activan para toda la página*/
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    /*Estas 3 propiedades específican que las demás propiedades utilizadas en las otras clases o etiquetas se ejecutarán hasta el límite que ellas indican.*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    /*Color de fondo de la página*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Tipo de letra*/
+}
+
+.container {
+    width: 1000px;
+    /*Ancho que tendrá todo el contenido de la etiqueta donde se encuentra la clase llamada "container"*/
+    background: #cccccc;
+    margin: 20px auto;
+    /*margen de la división con respecto al ancho del navegador*/
+}
+
+header {
+    background: #30323d;
+    color: #fff;
+    padding: 20px;
+}
+
+.main {
+    background: #fff;
+    padding: 20px;
+    width: 70%;
+    float: left;
+    /*indica que la división que tiene la clase llamada "main" estará al lado izquierdo*/
+}
+
+aside {
+    background: #e8c547;
+    color: #fff;
+    padding: 20px;
+    width: 30%;
+    float: right;
+    /*indica que la división que tiene la clase llamada "main" estará al lado derecho*/
+}
+
+footer {
+    clear: both;
+    /*para que la división del pie de página no se involucre con las divisiones superiores*/
+    background: #30323d;
+    padding: 20px;
+    color: #fff;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <script>
+        var filas = prompt("Ingrese la cantidad de filas para la tabla");
+        var columnas = prompt("Ingrese la cantidad de columnas para la tabla");
+    </script>
+</head>
+
+<body>
+    <table width="400" border="1">
+        <tr>
+            <script>
+                for (var i = 0; i <= columnas; i++) {
+                    if (i == 0) {
+                        document.write("<th>Tabla</th>");
+                    } else {
+                        document.write("<th>Columna " + i + "</th> ");
+                    }
+                }
+            </script>
+        </tr>
+        <script>
+            for (var i = 0; i < filas; i++) {
+                document.write("<tr>");
+                for (var j = 0; j <= columnas; j++) {
+                    if (j == 0) {
+                        document.write("<td>Fila, " + parseInt(i + 1) + "</td>");
+                    } else {
+                        document.write("<td><input type=\"text\" size='10'></td>");
+                    }
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+    <p></p><a href="javascript:window.close()">Cerrar</a></p>
+</body>
+
+</html>

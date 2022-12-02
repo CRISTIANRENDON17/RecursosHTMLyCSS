@@ -1,0 +1,31 @@
+body {
+    /*background: #C3C8F2;
+
+    background: url('../css/images/html5.jpg');
+    background-repeat: no-repeat; /*small images do not be repeat
+    background-size: 50%;
+    background-attachment: fixed; /*scoll, the image move with the text and fixed, the image stays still
+    background-position: center center; 50px 200px
+
+    background: url('../css/images/html5.jpg') no-repeat fixed center center;
+    background-size: 50%;
+
+    background-repeat: repeat-x; /*horizontal repeat
+    background-repeat: repeat-y; /*vertical repeat
+
+    background: url('../css/images/kalen-emsley-_LuLiJc1cdo-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;*/
+    background: url('/HTML/img/email-pattern.png');
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+.background {
+    width: 600px;  /*anchura*/
+    height: 600px; /*altura*/
+    background: url('/HTML/img/kalen-emsley-_LuLiJc1cdo-unsplash.jpg') #C3C8F2; /*imagen, pero si pasa algo, sale un color*/
+    background-repeat: no-repeat; /*La propiedad de CSS background-repeat define como se repiten los fondos del documento.*/
+    background-size: 50%; 
+    /*display: flex;*/
+}

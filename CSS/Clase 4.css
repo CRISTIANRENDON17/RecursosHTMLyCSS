@@ -1,0 +1,20 @@
+body
+{
+    background-color: black;
+}
+
+.background
+{
+    width: 900px;  /*anchura*/
+    height: 900px; /*altura*/
+    background: url('/HTML/img/fondo.jpg') #C3C8F2; /*imagen, pero si pasa algo, sale un color*/
+    background-repeat: repeat; /*La propiedad de CSS background-repeat define como se repiten los fondos del documento.*/
+    background-size: 50%; 
+    /*display: flex;*/
+
+}
+
+.centrar
+{
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+</head>
+<body>
+    <h2 style="text-align: center; color: blue; border-style: double;">
+        Ejercicios básicos de JavaScript
+    </h2>
+    Create de Following &#10094script&#10095 &#10094/script&#10095 :
+    <script>
+        
+        var Cedula = [
+            "12345",
+            "23456",
+            "34567"
+        ];
+        
+        document.write("<p><ul><li>"+"Se tiene la siguiente Arreglo :["+Cedula+"], imprimir solo el"+ 
+        " numero de la cedula 23456 </li>");
+        document.write("<p> Primera Forma: "+Cedula[1]);
+        var a = Cedula[1];
+        document.write("<p> Segunda Forma: "+a);
+        
+        for(let i = 0; i<Cedula.length ; i++)
+        {
+            if(Cedula[i]=="23456")
+            {
+                document.write("<p> Tercera Forma: "+Cedula[i]);
+            }
+        }
+        var Nombre = [
+            "Luis",
+            "Karen",
+            "Valentina"
+        ]
+        document.write("<p><li>Se tienen los siguientes arreglos"
+        +"<p>Cedulas = "+Cedula
+        +"<br>Nombres = "+Nombre
+        +"</li>")
+
+            document.write("<ol><li>"
+            +"Imprimir el arreglo 'Nombre' Iniciando desde la ultima posicion hasta la primera </li>"
+            +"<li>Imprimir los datos de los arreglos de forma continua, es decir ej: 12345 luis 23456  Karen etc </li></ol>")
+
+                document.write("<p> RESPUESTA 1")
+                for(let i = Nombre.length-1; i >= 0; i--)
+                {
+                    document.write("<br> Nombre["+(i)+"] ="+Nombre[i]);
+                }
+                document.write("<p> RESPUESTA 2")
+                for(let i = 0; i < 3 ; i++)
+                {
+                    document.write("<br> "+Cedula[i]+","+Nombre[i]);
+                }
+        document.write("<li> Imprimir el factorial de un numero usando el ciclo while."
+        +"<br> Por medio de casos:"
+        +"<ul><li> Si el resultado es par, imprimir el numero que se hallo factorial</li>"
+        +"<li> Si el resultado es mayor a tres sifras, imprimir la variable controladora</li>"
+        +"<li> Imprimir el resultado si es el primero</li><ul>")
+
+            document.write("<p> RESPUESTA 1")
+            var n = 5,i = 0;
+            do{
+                n = n * n;
+                i++;
+            }while(i > 0);
+    
+
+    </script>
+    
+
+    
+</body>
+</html>

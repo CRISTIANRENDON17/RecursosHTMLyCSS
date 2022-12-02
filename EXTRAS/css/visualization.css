@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+a {
+    /*display: none;*/
+    /*visibility: hidden;*/
+    background: #246eb9;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.box {
+    color: #fff;
+    background: #4fb560;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    /* overflow: hidden; hide content */
+    overflow: auto; /*show the scroll*/
+}
+
+.container {
+    width: 600px;
+    background: #ccc;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container2 .box{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.blue {
+    background: #009ddc;
+    z-index: 10; /*higher value to show in front*/
+}
+
+.gray {
+    background: #32021f;
+    left: 50px;
+    bottom: 80px;
+    z-index: 9;
+}

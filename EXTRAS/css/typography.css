@@ -1,0 +1,21 @@
+body {
+    font-family: "Times new roman", Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-transform: capitalize; /*first letter of every word in uppercase*/
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    color: #4281ed;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase; /*all in lowercase*/
+}

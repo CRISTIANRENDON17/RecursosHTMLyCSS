@@ -1,0 +1,23 @@
+git status
+git add .
+git commit -m "mensaje"
+git push origin
+
+git checkout -b nombrerama
+git checkout nombrerama
+
+Elabore un metodo que reciba una cadena de texto como parametro y devuelva la cadena de texto hasta el numero 20. si la cadena de texto se corta, adicione "..." al final
+
+git log --oneline --decorate --all --graph
+
+
+crear ramas
+
+git pull /actualiza repositorio en la rama parada
+
+
+git clone https://github.com/CRISTIANRENDON17/PruebaSourceCol.git
+
+git remote add upstream https://github.com/CRISTIANRENDON17/PruebaSourceCol.git
+
+git fetch upstream

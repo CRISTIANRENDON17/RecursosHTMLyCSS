@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!--se encarga del navegador web-->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!--traduce un código moderno a un código soportado por cualquier navegador web-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React</title>
+</head>
+
+<body>
+    <!--donde se va a mostrar en la pagina lo de react-->
+    <div id="root"></div>
+
+    <!--label, permite utilizar el codigo nuevo de js y que sea mostrado en cualquier navegador -->
+    <script type="text/babel">
+        const divRoot = document.querySelector('#root'); //retorna enlace con html
+        const nombre = 'Cristian Rendon';
+        const h1Tag = <h1>Hola soy {nombre}</h1>; //utiliza html con js
+        ReactDOM.render(h1Tag,divRoot); //renderisa el codigo para mostrarlo en la pagina
+    
+    </script>
+
+
+</body>
+
+</html>
