@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/Index.css" alt="link de bootstrap">
+  <link rel="stylesheet" href="../CSS/bootstrap.css" alt="link de bootstrap">
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-dark  bg-primary ">
+      <div class="row ajuste-row">
+        <span class="navbar-brand mb-0 h1"><a class="navbar-brand " href="Index.html">Trabajo JS</a></span>
+        <button class="nav-link btn btn-primary" id="Inicio" type="submit" placeholder="Inicio"
+          onclick="BorrarCalculadora()" onmouseup="Funcion1()">Inicio</button>
+        <button class="nav-link btn btn-primary" id="Calculadora" type="submit" placeholder="Calculadora" onclick="BorrarFuncion1()"
+          onmouseup=" Funcion2()">Calculadora</button>
+      </div>
+    </nav>
+    <div id="imgKonecta">
+      <img src="../IMG/Konecta.jpg" alt="Konecta" class="img-fluid">
+    </div>
+
+    <div class="main">
+
+      <div>
+        <form action="" class="formulario desaparecer"  id="formulario">
+         <div class="formulario__grupo" id="grupo__identificacion">
+            <label for="identificacion" class="formulario__label">Numero de Identificacion</label>
+            <div class="formulario__grupo-input">
+              <input type="number" class="formulario__input" name="identificacion" id="identificacion"
+                placeholder="Ej: 1001506044">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La identificacion tiene que ser entre 7 a 14 numeros</p>
+          </div>
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombres y Apellidos</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ej: Cristian Rendon">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El Nombre tiene que ser de 2 a 40 dígitos y solo puede contener letras
+            </p>
+          </div>
+          <div class="formulario__grupo" id="grupo__celular">
+            <label for="celular" class="formulario__label">Celular</label>
+            <div class="formulario__grupo-input">
+              <input type="number" class="formulario__input" name="celular" id="celular" placeholder="Ej: 3204316408">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El celular tiene que ser de 7 a 12 dígitos y solo puede contener numeros.
+            </p>
+          </div>
+          <div class="formulario__grupo" id="grupo__areaoperacion">
+            <label for="areaoperacion" class="formulario__label">Area Operacion</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="areaoperacion" id="areaoperacion"
+                placeholder="Ej: Programador front-end">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El Area/Operacion solo puede estar entre 2 a 40 letras.</p>
+          </div>
+          <div class="formulario__grupo" id="grupo__cargo">
+            <label for="cargo" class="formulario__label">Cargo</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="cargo" id="cargo" placeholder="Ej: Programador Junior">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El cargo solo puede estar entre 2 a 40 letras.</p>
+          </div>
+          <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+              <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
+              bajo.</p>
+          </div>
+          <div class="formulario__grupo" id="grupo__horario">
+            <label for="horario" class="formulario__label">Horario en el que puedemos contactarle</label>
+            <div class="formulario__grupo-input">
+              <input type="datetime-local" class="formulario__input" name="horario" id="horario"
+                placeholder="Seleccione un horario">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El Hoario de contacto tiene que ser una fecha mayor a la actual.</p>
+          </div>
+          <div class="formulario__grupo" id="grupo__lugar">
+            <label for="lugar" class="formulario__label">¿Donde te encuentras?</label>
+            <div class="formulario__grupo-input">
+              <select class="formulario__input" name="lugar" id="lugar" placeholder="Donde te encuentras...">
+                <option value="1">Colombia (+57)</option>
+                <option value="2">Escocia (+6)</option>
+                <option value="3">Peru (+19)</option>
+                <option value="4">Otro</option>
+              </select>
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Seleccione un lugar</p>
+          </div>
+          <br>
+          <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
+            </p>
+          </div>
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          </div>
+        </form>
+      </div>
+      <form id="form2">
+        <!---------------Calculadora--------------------------->
+      </form>
+      <div>
+        <!--Aqui van los botones fuera del form-->
+        <div class="row ajuste-row" id="Botones-Calculadora">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <hr class="linea">
+      Autor: Cristian Rendon Rodriguez - Correo:cristianrendon1704@gmail.com
+      <hr class="linea">
+    </footer>
+  </div>
+
+
+  <script src="../JS/Index.js"></script>
+  <!--Este script me trae los iconos que aparecen en los imputs-->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
